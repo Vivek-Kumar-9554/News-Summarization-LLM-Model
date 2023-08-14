@@ -1,14 +1,22 @@
-# <span style="font-size: 28px; font-weight: bold; color: red;">News Summarization Project using Pre-trained Language Models</span>
+# <span style="font-size: 28px; font-weight: bold; color: red;">News Summarization using Pre-trained Language Models</span>
 
-This project aims to <span style="font-weight: bold;">automatically generate concise and coherent summaries of news articles</span> using pre-trained Language Models (LMs). By utilizing powerful language models like T5 and GPT-3, we can <span style="font-weight: bold;">extract the most important information</span> from lengthy news articles and present it in a condensed form.
+This project aims to <span style="font-weight: bold;">automatically generate concise and coherent summaries of news articles</span> using pre-trained Large Language Models (LLMs). By utilizing powerful language models like T5 and GPT-3, we can <span style="font-weight: bold;">extract the most important information</span> from lengthy news articles and present it in a condensed form.
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [How to Use](#how-to-use)
+- [Project Impact](#project-impact)
+- [Author](#author)
 
 ## Project Overview
 
 The goal of this project is to create a <span style="font-weight: bold;">user-friendly interface</span> where users can input news articles, and the system will provide a summarized version of the article as output. We achieve this through the following steps:
 
-1. **Data Collection:** We start by collecting a dataset of news articles and their corresponding summaries. The dataset is taken from Kaggle. These articles are then preprocessed and tokenized to make them suitable for input to the language model.
+1. **Data Collection:** We collect a dataset of news articles and their corresponding summaries (I used a dataset from Kaggle). These articles are then preprocessed and tokenized to make them suitable for input to the language model.
 
-2. **Fine-tuning the Model:** We fine-tune a pre-trained Language Model "T5" using the collected dataset. This process involves training the model on the task of summarization to adapt it specifically for generating news summaries.
+2. **Fine-tuning the Model:** We fine-tune a pre-trained Large Language Model 'T5' using the collected dataset. This process involves training the model on the task of summarization to adapt it specifically for generating news summaries.
 
 3. **User Interface:** We create a user interface using the Gradio library, allowing users to instantly input news articles and receive summarized versions.
 
@@ -19,7 +27,7 @@ The goal of this project is to create a <span style="font-weight: bold;">user-fr
 ## Technologies Used
 
 - Python
-- PyTorch 
+- PyTorch (or TensorFlow, depending on the LM used)
 - Transformers Library (for pre-trained models)
 - Gradio (for creating the user interface)
 
